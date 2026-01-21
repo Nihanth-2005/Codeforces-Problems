@@ -1,3 +1,9 @@
+/* 
+Approach:
+- Brute Force to check if the given number is simply divisible bu 2 or not.
+- If not divisible print No, else Print Yes.
+*/
+
 def watermelon(k):
   n=int(input())
   if n>2 and n%2==0:
