@@ -1,0 +1,18 @@
+/*
+Approach: 
+- First, each word given is checked for its length.
+- If its length is strictly greater than 10, the the abbreviation logic is used as mentioned below.
+*/
+
+def way_too_long_words:
+  n=int(input())
+  words = [input().strip() for _ in range(n)]
+  for word in words:
+      if len(word)>10:
+          k=len(word)
+          j=k-2
+          print(word[0] + str(j) + word[-1])
+      else:
+          print(word)
+way_too_long_words()
+
