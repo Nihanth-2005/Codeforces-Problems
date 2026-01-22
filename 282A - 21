@@ -1,0 +1,18 @@
+/*
+Approach:
+- First, the number of inputs to be given is taken as a integer value.
+- Then, according to the operations of ++ or --, either increment or decrement is done according tpo the given input.
+*/
+
+
+# CODE:
+def incr_decr:
+  n=int(input())
+  stmnts = [input().strip() for _ in range(n)]
+  x=0
+  for stmnt in stmnts:
+      if stmnt == "X++" or stmnt == "++X":
+          x+=1
+      if stmnt == "X--" or stmnt == "--X":
+          x-=1
+  print(x)
