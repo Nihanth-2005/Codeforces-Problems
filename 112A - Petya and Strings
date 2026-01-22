@@ -1,0 +1,23 @@
+/*
+Approach:
+- Compare the two strings character by character in lowercase to avoid case sensitivity.
+- At the first mismatch, decide the lexicographic order; if no mismatch is found, treat the strings as equal.
+*/
+
+
+# CODE
+
+import string
+def lexicographic_check(str1,str2):
+    for i in range(len(str1)):
+        if str1[i].lower() > str2[i].lower():
+            print(1)
+            return
+        if str1[i].lower() < str2[i].lower():
+            print(-1)
+            return
+    print(0)
+    
+str1=input()
+str2=input()
+lexicographic_check(str1,str2)
