@@ -1,0 +1,29 @@
+/*
+Approach:
+# Bruteforce
+- First, the unique characters in the given string are extracted by checking each character.
+# Optimized
+- Set operation can be used to extract the unique characters of the given string name.
+
+- If the number of distinct characters in one's user name is odd, then he is a male
+- If the number of distinct characters in one's username is even, then she is a female
+*/
+
+
+# CODE
+
+def boyorgirl(name):
+    unique=[]
+    for char in name:
+        if char not in unique:
+            unique.append(char)
+    
+    if len(unique) %2 != 0:
+        #Male
+        print("IGNORE HIM!")
+    else:
+        #Female
+        print("CHAT WITH HER!")
+
+name=input()
+boyorgirl(name)
