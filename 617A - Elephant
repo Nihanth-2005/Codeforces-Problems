@@ -1,0 +1,28 @@
+/*
+Approach:
+- In thw while loop, the variable names steps is dynamically updated by checking a sequence of conditions.
+- Exactly one condition is satisfied per loop and the arrangement of conditional steps is in non-increasing order.
+*/
+
+
+# CODE
+
+def steps(point):
+    count=0
+    while point>0:
+        if point>=5:
+            point-=5
+            count+=1
+        elif point>=4:
+            point-=4
+            count+=1
+        elif point>=3:
+            point-=3
+            count+=1
+        else:
+            count+=1
+            break
+    print(count)
+
+point=int(input())
+steps(point)
