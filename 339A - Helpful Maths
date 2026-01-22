@@ -1,0 +1,17 @@
+/*
+Approach:
+- Splitting the given input at '+' symbol.
+- Then, sorting the list of integers, and recombining them with the '+' symbols.
+*/
+
+
+# CODE
+def addition_order_change(op):
+    k=op.split("+")
+    k.sort()
+    for i in range(len(k)-1):
+        print(k[i]+"+",end="")
+    print(k[-1])
+
+op=input()
+addition_order_change(op)
