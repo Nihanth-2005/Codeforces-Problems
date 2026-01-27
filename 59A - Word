@@ -1,0 +1,24 @@
+/*
+Approach:
+- First, we iterate through all characters of the given word, counting the uppercase and lowercase letters
+- Then, by checking for upper and lower case conditions, we finally convert entire word into either uppercase or lowercase
+*/
+
+# CODE
+
+def word(n):
+    upper,lower=0,0
+    for char in n:
+        if char.isupper():
+            upper+=1
+        else:
+            lower+=1
+    if upper>lower:
+        n=n.upper()
+    else:
+        n=n.lower()
+    
+    print(n)
+        
+n=input()
+word(n)
