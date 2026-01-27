@@ -1,0 +1,23 @@
+/*
+Approach:
+- Within the limit k, for every iteration, check for 2 conditions. They are:
+  - If the number ends with a non-zero digit, then subtract the given number by 1
+  - If not, then divide the number by 10
+- Repeat this process until the condition of number of times, i.e k gets satisfied.
+*/
+
+
+# CODE
+
+def subtraction(n,k):
+    j=0
+    while j<k:
+        if n%10!=0:
+            n-=1
+        else:
+            n/=10
+        j+=1
+    print(int(n))
+
+n,k=map(int,input().split())
+subtraction(n,k)
