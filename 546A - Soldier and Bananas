@@ -1,0 +1,22 @@
+/*
+Approach:
+- Use a loop from 1 to w and add k × i to total_cost for each banana to calculate the total price.
+- Compare total_cost with n; if total_cost > n, print total_cost − n, else print 0.
+*/
+
+# CODE
+
+def bananas(k,n,w):
+    total_cost=0
+    i=1
+    while i<=w:
+        j=k*i
+        total_cost+=j
+        i+=1
+    if total_cost-n > 0:
+        print(total_cost-n)
+    else:
+        print(0)
+
+k,n,w=map(int,input().split())
+bananas(k,n,w)
