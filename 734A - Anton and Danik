@@ -1,0 +1,21 @@
+/*
+Approach:
+- First, the counts of A's and D's in the given string are taken
+- Then, they are compared to print the one with highest count
+*/
+
+# CODE
+
+def game(n,ipt):
+    a=ipt.count('A')
+    d=ipt.count('D')
+    if a>d:
+        print('Anton')
+    elif a<d:
+        print('Danik')
+    else:
+        print('Friendship')
+
+n=int(input())
+ipt=input()
+game(n,ipt)
