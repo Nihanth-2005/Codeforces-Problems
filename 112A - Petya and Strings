@@ -1,11 +1,9 @@
-/*
 Approach:
 - Compare the two strings character by character in lowercase to avoid case sensitivity.
 - At the first mismatch, decide the lexicographic order; if no mismatch is found, treat the strings as equal.
-*/
 
 
-# CODE
+CODE :
 
 import string
 def lexicographic_check(str1,str2):
