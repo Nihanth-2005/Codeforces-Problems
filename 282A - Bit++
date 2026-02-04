@@ -1,11 +1,9 @@
-/*
 Approach:
 - First, the number of inputs to be given is taken as a integer value.
 - Then, according to the operations of ++ or --, either increment or decrement is done according tpo the given input.
-*/
 
 
-# CODE:
+CODE :
 def incr_decr:
   n=int(input())
   stmnts = [input().strip() for _ in range(n)]
