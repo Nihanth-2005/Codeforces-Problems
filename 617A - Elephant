@@ -1,11 +1,10 @@
-/*
 Approach:
 - In thw while loop, the variable names steps is dynamically updated by checking a sequence of conditions.
 - Exactly one condition is satisfied per loop and the arrangement of conditional steps is in non-increasing order.
-*/
 
 
-# CODE
+
+CODE :
 
 def steps(point):
     count=0
