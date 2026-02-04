@@ -1,11 +1,11 @@
-/*
-Approach:* 
+Approach:
 - The approach repeatedly updates both values in a loop, multiplying a by 3 and b by 2 each step, while counting the number of operations.
 - The loop continues until a becomes strictly greater than b, and the count represents the required number of steps.
-*/
 
 
-# CODE
+
+CODE :
+
 def weights(a,b):
     count=0
     while a<=b:
