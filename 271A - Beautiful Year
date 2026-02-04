@@ -1,0 +1,16 @@
+/*
+Approach:
+- First, all the years starting from the given input will be checked for their set length
+- Then, if the condition is satisfied, the subsequent nearest largest number is printed.
+*/
+
+# CODE
+
+def year(n):
+    while True:
+        n+=1
+        if len(set(str(n))) == 4:
+            print(n)
+            break
+n=int(input())
+year(n)
