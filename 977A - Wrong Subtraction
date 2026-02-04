@@ -1,13 +1,12 @@
-/*
 Approach:
 - Within the limit k, for every iteration, check for 2 conditions. They are:
   - If the number ends with a non-zero digit, then subtract the given number by 1
   - If not, then divide the number by 10
 - Repeat this process until the condition of number of times, i.e k gets satisfied.
-*/
 
 
-# CODE
+
+CODE :
 
 def subtraction(n,k):
     j=0
