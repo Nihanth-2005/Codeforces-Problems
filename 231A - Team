@@ -1,10 +1,9 @@
-/*
 Approach: 
 - Read the n value and take the matrix as input
 - Then count the individual rows with more values of 1.
-*/
 
-# CODE
+
+CODE :
 def way_too_long_words():
   n=int(input())
   matrix=[list(map(int, input().split())) for _ in range(n)]
