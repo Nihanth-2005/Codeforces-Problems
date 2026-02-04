@@ -1,11 +1,9 @@
-/*
 Approach:
 - Splitting the given input at '+' symbol.
 - Then, sorting the list of integers, and recombining them with the '+' symbols.
-*/
 
 
-# CODE
+CODE :
 def addition_order_change(op):
     k=op.split("+")
     k.sort()
