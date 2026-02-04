@@ -1,8 +1,9 @@
-/*
 Approach: 
 - First, each word given is checked for its length.
 - If its length is strictly greater than 10, the the abbreviation logic is used as mentioned below.
-*/
+
+
+CODE :
 
 def way_too_long_words:
   n=int(input())
