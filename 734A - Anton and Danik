@@ -1,10 +1,10 @@
-/*
 Approach:
 - First, the counts of A's and D's in the given string are taken
 - Then, they are compared to print the one with highest count
-*/
 
-# CODE
+
+
+CODE :
 
 def game(n,ipt):
     a=ipt.count('A')
