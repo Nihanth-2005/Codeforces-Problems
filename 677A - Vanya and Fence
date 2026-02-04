@@ -1,0 +1,18 @@
+Approach:
+- In this problem, we iterate through each item of the list, i.e each person's height with height of fence.
+- If any person's height is more than fence height, then he ocupies size of 2 units, else 1 unit.
+
+CODE :
+
+def width_calculate(n,h,l):
+    count=0
+    for i in l:
+        if i>h:
+            count+=2
+        else:
+            count+=1
+    print(count)
+
+n,h=map(int,input().split())
+l=list(map(int,input().split()))
+width_calculate(n,h,l)
