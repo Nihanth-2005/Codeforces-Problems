@@ -1,10 +1,8 @@
-/*
 Approach:
 - Capitalizing the first letter of the given input word
-*/
 
 
-# CODE
+CODE :
 def capitalize(ip):
     print(ip[0].upper() + ip[1:])
 
