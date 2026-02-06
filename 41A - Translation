@@ -1,0 +1,17 @@
+Approach:
+- First, two words are taken as input
+- Later, the reverse of first word ic checked with the 2nd word input
+- If both match, YES is printed, else NO
+
+
+CODE :
+
+def translation(word, trans_word):
+    if word[::-1] == trans_word:
+        print("YES")
+    else:
+        print("NO")
+
+word= input()
+trans_word = input()
+translation(word,trans_word)
