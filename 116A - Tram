@@ -1,0 +1,24 @@
+Approach:
+- BruteForce
+  - First, the inputs are taken through list comprehension technique, then are passed as arguments to the function.
+  - Later, for each line of input, the exiting passengers need to be removed from the passenger count and the entering passengers need to be added to the passenger count.
+  - While doing this process, after each inner loop complete iteration, keep track and update the maximum passengers in the tram after the inner loop iteration, i.e after 1 row of input is executed.
+
+
+CODE :
+
+def tram_capacity(no_of_stops, pairs):
+    passenger_count=0
+    max_passengers=0
+    for i in range(no_of_stops):
+        for j in range(2):
+            if j==0:
+                passenger_count-=pairs[i][j]
+            else:
+                passenger_count+=pairs[i][j]
+        max_passengers = max(max_passengers, passenger_count)
+    print(max_passengers)
+
+no_of_stops=int(input())
+pairs = [tuple(map(int,input().split())) for _ in range(n)]
+tram_capacity(no_of_stops, pairs)
