@@ -1,0 +1,18 @@
+Apprpach:
+- First, inputs are taken, and in the function.
+- The bunch of inputs taken as list are converted to set as there are only 2 possible inputs, i.e 0 and 1.
+- The if 1 is present in set, then return "HARD" else return "EASY"
+
+
+CODE :
+
+def question_easy(no_of_inputs, inputs):
+    k=set(inputs)
+    if 1 in k:
+        print("HARD")
+    else:
+        print("EASY")
+
+no_of_inputs = int(input())
+inputs = list(map(int, input().split()))
+question_easy(no_of_inputs, inputs)
