@@ -1,0 +1,17 @@
+Approach :
+- A series is given in the form of -1+2-3+4-5+6....
+- Task is to calculate the sum upto a given value.
+- General process includes the sum of all even integers and subtraction of all odd integers, but it takes up a lot of time, due to lenghty calculations.
+- To avoid this, we can use the general formulas as mentioned below based in the n value
+
+
+CODE :
+
+def functionf1(n):
+    if n % 2 == 0:
+        print(n // 2)
+    else:
+        print(-(n + 1) // 2)
+
+n=int(input())
+functionf1(n)
