@@ -1,0 +1,18 @@
+Approach:
+- First, the number of rooms is taken as input
+- Then, the space available in each room and the number of people already living in it is taken.
+- Then, using if, the necessary condition is checked, and if any time condition is satisfied, the count variable is incremented, which is ultimately printed at the last.
+
+CODE :
+
+def accomodation(n):
+    pairs = []
+    count=0
+    for _ in range(n):
+        a, b = map(int, input().split())
+        if b-a>=2:
+            count+=1
+    print(count)
+
+n=int(input())
+accomodation(n)
