@@ -1,0 +1,15 @@
+Approach :
+- We can take the inputs as mentioned
+- Then, can iterate through all elements one by one and make a total of it, then the average is calculated.
+
+
+CODE :
+
+def drinks(n):
+    total=0
+    arr=list(map(int, input().split()))
+    for ele in arr:
+        total+=ele
+    print(total/n)
+n=int(input())
+drinks(n)
