@@ -1,0 +1,17 @@
+Approach :
+- Traverse the string from index 0 to n-2 and compare each character with the next one.
+- Increment a counter whenever two consecutive characters are the same, since one of them must be removed.
+
+
+CODE :
+
+def stone_input(n,stone):
+    count=0
+    for i in range(n-1):
+        if stone[i]== stone[i+1]:
+            count+=1
+    print(count)
+    
+n=int(input())
+stone=input()
+stone_input(n,stone)
