@@ -1,0 +1,36 @@
+Approach :
+- Iterate from 1 to n, alternating between "I hate " and "I love " based on whether the index is odd or even.
+- After each phrase (except the last one), append "that ", and finally append "it" to complete the sentence.
+
+
+
+CODE :
+
+def hulk(n):
+    last="it"
+    first="I hate "
+    second="I love "
+    connector = "that "
+    total= ""
+    count=0
+    if n==1:
+        print(first + last)
+        return
+    else:
+        for i in range(1,n+1):
+            if i%2!=0:
+                total+=first
+                if count<n-1:
+                    total+=connector
+                    count+=1
+            else:
+                total+=second
+                if count<n-1:
+                    total+=connector
+                    count+=1
+            
+    total+=last
+    print(total)
+            
+n=int(input())
+hulk(n)
