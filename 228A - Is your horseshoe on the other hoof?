@@ -1,0 +1,13 @@
+Approach :
+- Convert the list of horseshoe colors into a set to count the number of unique colors.
+- Subtract the number of unique colors from 4 to determine how many horseshoes need to be replaced.
+
+
+CODE :
+
+def horseshoes(n):
+    print(4 - len(set(n)))
+        
+
+n=list(map(int, input().split()))
+horseshoes(n)
