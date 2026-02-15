@@ -1,0 +1,19 @@
+Approach :
+- Convert the number to a string and count how many digits are either 4 or 7.
+- If that count equals 4 or 7, print "YES"; otherwise, print "NO".
+CODE :
+
+def lucky_digits(n):
+    #Heavier approach
+    lucky_count=0
+    for i in list(str(n)):
+        if i in "47":
+            lucky_count+=1
+    
+    if lucky_count==4 or lucky_count==7:
+        print("YES")
+    else:
+        print("NO")
+
+n=int(input())
+lucky_digits(n)
