@@ -1,0 +1,17 @@
+Approach :
+- For each test case, check whether a is already divisible by b using a % b.
+- If not, print b - (a % b) to show the minimum number needed to make a divisible by b; otherwise print 0.
+
+CODE :
+
+def divisibility(n):
+    for _ in range(n):
+        a,b = map(int, input().split())
+        if a%b==0:
+            print(0)
+        else:
+            print(b-(a%b))
+
+
+n=int(input())
+divisibility(n)
