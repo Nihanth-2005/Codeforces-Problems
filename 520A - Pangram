@@ -1,0 +1,22 @@
+Approach :
+- Convert all characters to lowercase so uppercase and lowercase letters are treated the same.
+- Check if the set of characters contains all 26 English letters; if yes print "YES", otherwise print "NO".
+
+CODE :
+
+def panagram(n,text):
+    #k=set(text.lower())
+    str2=""
+    for char in text:
+        if ord(char)>=65 and ord(char)<=90:
+            str2+=(chr(ord(char)+32))
+        else:
+            str2+=char
+    if len(set(str2))==26:
+        print("YES")
+    else:
+        print("NO")
+
+n=int(input())
+text=input()
+panagram(n,text)
