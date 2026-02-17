@@ -1,0 +1,26 @@
+Approach :
+- By double for loop, the postition of 1 in matrix can be found, though is time consuming.
+- But, as the size of matrix is fixed for 5x5, it would slightly decrease the TC
+- Then, the center position (2,2) to the distance fo the point where 1 is is calculated, i.e absolute distance, and returned
+
+
+
+CODE :
+
+def beautiful_matrix():
+    matrix=[]
+    for _ in range(5):
+        row=list(map(int, input().split()))
+        matrix.append(row)
+    
+    #position of 1 in matrix can be found: (x,y)
+    #later, the mid postion for all matrices will be same, i.e (2,2)
+    # the required output can be processed by (x-2) + (y-2) (1,4)(2,2) : abs((2-1)+(2-4))
+    
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            if matrix[i][j]==1:
+                k=(i,j)
+                
+    print(abs(2-k[0]) + abs(2-k[1]))
+beautiful_matrix()
