@@ -1,0 +1,18 @@
+Approach :
+- Take the levels passed by both players (ignoring the first count value) and combine them into one list.
+- Convert the combined list into a set to remove duplicates and check if its length equals max_level.
+
+
+CODE :
+
+def levels(max_level):
+    k=list(map(int, input().split()))
+    l=list(map(int, input().split()))
+    
+    if (len(set(k[1:] + l[1:])) == max_level):
+        print("I become the guy.")
+    else:
+        print("Oh, my keyboard!")
+    
+max_level=int(input())
+levels(max_level)
