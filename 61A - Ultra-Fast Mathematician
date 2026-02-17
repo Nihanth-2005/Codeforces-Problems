@@ -1,0 +1,19 @@
+Approach: 
+- Iterate through the binary strings index by index and compare corresponding characters.
+- Append '0' if bits are equal, otherwise append '1', and print the constructed result string.
+
+
+CODE :
+
+def bitwise_xor_op(n1,n2):
+    output=""
+    for i in range(len(n1)):
+        if n1[i]==n2[i]:
+            output+='0'
+        else:
+            output+='1'
+    print(output)
+
+n1=input()
+n2=input()
+bitwise_xor_op(n1,n2)
