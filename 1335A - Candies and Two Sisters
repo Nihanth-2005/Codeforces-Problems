@@ -1,0 +1,17 @@
+Approach :
+- For the given question, a formula can be applied such that if the input is even, then the output can be the input divided by 2 subtracted by 1
+- If the input is odd, the output can be simply divided by 2 itself.
+
+
+CODE :
+
+def candies(t):
+    for _ in range(t):
+        k=int(input())
+        if k%2==0:
+            print(k//2 -1)
+        else:
+            print(k//2)
+
+t=int(input())
+candies(t)
