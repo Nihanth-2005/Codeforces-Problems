@@ -1,0 +1,22 @@
+Approach :
+- All the letters of both inputs must be there in the scrambled output
+- So, we create a counter such that we measure the character frequency of both inputs combined along with the output.
+- If the content of both dictionaries (Counters) match, then it is printed YES else NO
+
+CODE :
+
+from collections import Counter
+def newyear_and_santa(name, host, pile):
+    if len(name+host)!=len(pile):
+        print("NO")
+        return
+    if Counter(name + host) == Counter(pile):
+        print("YES")
+    else:
+        print("NO")
+
+
+name=input()
+host=input()
+pile=input()
+newyear_and_santa(name, host, pile)
