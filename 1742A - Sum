@@ -1,0 +1,17 @@
+Approach :
+- For every two numbers we check if the sum is equal to the third number with three different OR conditions
+- If any one of the condition is true, then YES is printed, else NO is printed
+
+
+CODE :
+
+def sum(test_cases):
+    for _ in range(test_cases):
+        a,b,c = map(int, input().split())
+        # Brute force
+        if a+b==c or a+c==b or b+c==a:
+            print("YES")
+        else:
+            print("NO")
+test_cases=int(input())
+sum(test_cases)
